@@ -4,7 +4,7 @@ const studentRouter = require("./routers/student");
 const teacherRouter = require("./routers/teacher");
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT;
 
 app.use(express.json());
 app.use(studentRouter);
